@@ -1,27 +1,16 @@
 package com.zipcodewilmington.froilansfarm.Animal;
 
 import com.zipcodewilmington.froilansfarm.GenericUtils.NoiseMaker;
+import com.zipcodewilmington.froilansfarm.GenericUtils.Rideable;
 import com.zipcodewilmington.froilansfarm.GenericUtils.Rider;
 
-public class Horse extends Animal implements Rider{
+public class Horse <Animal> implements Rideable {
 
-    public Horse(Integer id, Integer age, Boolean hasBeenFed){
-        super(id, age, hasBeenFed);
-    }
-
-    public void eat() {
+    public void mounted() {
 
     }
 
-    public String makeNoise() {
-        return "Neigh!";
-    }
-
-    public void mount() {
-
-    }
-
-    public void dismount() {
+    public void dismounted() {
 
     }
 }

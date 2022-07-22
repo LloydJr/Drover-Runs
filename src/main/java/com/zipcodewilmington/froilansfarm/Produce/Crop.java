@@ -1,4 +1,10 @@
 package com.zipcodewilmington.froilansfarm.Produce;
 
-public interface Crop {
+import com.zipcodewilmington.froilansfarm.GenericUtils.Edible;
+
+public interface Crop <Edible> {
+Boolean hasBeenHarvested = false;
+
+Crop plant();
+
 }

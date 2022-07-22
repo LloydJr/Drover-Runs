@@ -2,7 +2,7 @@ package com.zipcodewilmington.froilansfarm.Vehicle;
 
 import com.zipcodewilmington.froilansfarm.Person.Pilot;
 
-public class CropDuster<CropDusterT extends Pilot> extends Vehicle implements AirCraft, FarmVehicle {
+public class CropDuster extends AirCraft implements FarmVehicle {
     void fertilize() {
 
     }
@@ -12,6 +12,10 @@ public class CropDuster<CropDusterT extends Pilot> extends Vehicle implements Ai
     }
 
     public void fly() {
+
+    }
+
+    public void makeNoise() {
 
     }
 }

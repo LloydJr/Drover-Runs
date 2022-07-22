@@ -1,4 +1,6 @@
 package com.zipcodewilmington.froilansfarm.Vehicle;
 
-public interface FarmVehicle<FarmV extends Vehicle> {
+import com.zipcodewilmington.froilansfarm.Person.Person;
+
+public interface FarmVehicle<FarmV extends Vehicle>  {
 }

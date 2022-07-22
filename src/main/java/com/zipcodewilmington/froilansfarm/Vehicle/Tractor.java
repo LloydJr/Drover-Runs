@@ -11,4 +11,8 @@ public class Tractor<TractorT extends Farmer> extends Vehicle implements FarmVeh
     public void operate() {
 
     }
+
+    public void makeNoise() {
+
+    }
 }
