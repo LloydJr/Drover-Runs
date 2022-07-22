@@ -1,4 +1,7 @@
 package com.zipcodewilmington.froilansfarm.Person;
 
-public interface Person {
+import com.zipcodewilmington.froilansfarm.GenericUtils.Eater;
+import com.zipcodewilmington.froilansfarm.GenericUtils.NoiseMaker;
+
+public interface Person <Person extends Eater> extends NoiseMaker, Eater {
 }

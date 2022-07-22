@@ -1,4 +1,14 @@
 package com.zipcodewilmington.froilansfarm.Vehicle;
 
-public class Tractor {
+import com.zipcodewilmington.froilansfarm.Person.Farmer;
+
+public class Tractor<TractorT extends Farmer> extends Vehicle implements FarmVehicle{
+
+    void harvest(){
+
+    }
+
+    public void operate() {
+
+    }
 }

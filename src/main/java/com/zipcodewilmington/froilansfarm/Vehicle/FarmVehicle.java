@@ -1,4 +1,4 @@
 package com.zipcodewilmington.froilansfarm.Vehicle;
 
-public interface FarmVehicle {
+public interface FarmVehicle<FarmV extends Vehicle> {
 }

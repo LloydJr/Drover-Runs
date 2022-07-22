@@ -1,4 +1,10 @@
 package com.zipcodewilmington.froilansfarm.Vehicle;
 
-public interface AirCraft {
+import com.zipcodewilmington.froilansfarm.Person.Person;
+import com.zipcodewilmington.froilansfarm.Person.Pilot;
+
+public interface AirCraft<AircraftT extends Vehicle> {
+
+    void fly();
+
 }
