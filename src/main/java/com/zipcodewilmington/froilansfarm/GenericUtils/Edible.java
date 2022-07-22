@@ -1,4 +1,6 @@
 package com.zipcodewilmington.froilansfarm.GenericUtils;
 
-public abstract class Edible {
+import com.zipcodewilmington.froilansfarm.Produce.Produce;
+
+public abstract class Edible <EdibleType> implements Produce {
 }

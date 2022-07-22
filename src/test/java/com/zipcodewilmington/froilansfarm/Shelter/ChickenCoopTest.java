@@ -18,7 +18,7 @@ public class ChickenCoopTest {
 
 
         //expected
-        amount
+
 
     }
 
