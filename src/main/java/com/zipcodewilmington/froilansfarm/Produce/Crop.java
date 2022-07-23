@@ -5,6 +5,6 @@ import com.zipcodewilmington.froilansfarm.GenericUtils.Edible;
 public interface Crop <Edible> {
 Boolean hasBeenHarvested = false;
 
-Crop plant();
+Crop plant(Edible object);
 
 }

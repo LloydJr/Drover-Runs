@@ -1,21 +1,27 @@
 package com.zipcodewilmington.froilansfarm.Vehicle;
 
-import com.zipcodewilmington.froilansfarm.Person.Pilot;
+import com.zipcodewilmington.froilansfarm.Produce.CropRow;
 
 public class CropDuster extends AirCraft implements FarmVehicle {
-    void fertilize() {
-
+    public boolean isFertilize(CropRow cropRow) {
+        if (fly()) {
+            boolean hasBeenFertilized = true;
+        }
+        return false;
     }
+
 
     public void operate() {
 
     }
 
-    public void fly() {
+    public Boolean mounted() {
 
+        return null;
     }
 
-    public void makeNoise() {
+    public Boolean dismounted() {
 
+        return null;
     }
 }
