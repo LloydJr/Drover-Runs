@@ -1,22 +1,14 @@
 package com.zipcodewilmington.froilansfarm.Shelter;
-
 import java.util.ArrayList;
-
 public class Shelter <ShelterType> {
-
-     ArrayList<ShelterType> list = new ArrayList<ShelterType>();
-
-
+    ArrayList<ShelterType> shelterlist = new ArrayList<ShelterType>();
     public void add(ShelterType occupants) {
-        list.add(occupants);
-
+        shelterlist.add(occupants);
     }
-
     public void remove(ShelterType occupants) {
-        list.remove(occupants);
+        shelterlist.remove(occupants);
     }
-
     public Integer getTotalOccupants() {
-        return list.size();
+        return shelterlist.size();
     }
 }
