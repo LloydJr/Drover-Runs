@@ -12,7 +12,7 @@ public class TestCropDuster {
     public void testMount(){
         Pilot pilot = new Pilot();
         CropDuster cropDuster = new CropDuster();
-        pilot.mount();
+//        pilot.mount();
     }
 
     @Test
