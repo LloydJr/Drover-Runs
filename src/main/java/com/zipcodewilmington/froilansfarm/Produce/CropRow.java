@@ -3,22 +3,23 @@ package com.zipcodewilmington.froilansfarm.Produce;
 import java.util.ArrayList;
 
 public class CropRow<Crop> {
-CropRow<Crop> CropRow = new CropRow(0);
-Integer numOfRows = 0;
+//CropRow<Crop> cropRow = new CropRow(0);
+Integer numOfCrops;
+Boolean hasBeenFertilized;
 
-    public CropRow(Integer numOfRows) {
-        this.numOfRows = numOfRows;
+    public CropRow(Integer numOfCrops,Crop crop) {
+        this.numOfCrops = numOfCrops;
+        for (int i = 0; i <= numOfCrops; i++) {
+            this.add(crop);
+        }
     }
 
     Crop add(Crop crop){
-
-    return crop;
-    }
-    Crop remove(Crop crop){
+        this.add(crop);
     return crop;
     }
 
-    Integer getNumberOfCrops(){
-    return 0;
-}
+    Integer size(){
+       return this.size();
+ }
 }

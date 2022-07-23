@@ -3,6 +3,7 @@ package com.zipcodewilmington.froilansfarm.Shelter;
 public class Shelter <ShelterType> {
     Integer amountOfOccupants;
 
+
     public void add(ShelterType occupants) {
 
     }
