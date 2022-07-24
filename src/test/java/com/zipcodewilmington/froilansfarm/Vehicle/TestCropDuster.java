@@ -22,6 +22,7 @@ public class TestCropDuster {
     public void testMount(){
         Pilot pilot = new Pilot();
         CropDuster cropDuster = new CropDuster();
+
         Boolean actual = cropDuster.mounted(pilot);
 
         Assert.assertEquals(actual, cropDuster.mounted(pilot));
