@@ -2,6 +2,7 @@ package com.zipcodewilmington.froilansfarm.Person;
 
 import com.zipcodewilmington.froilansfarm.GenericUtils.Eater;
 import com.zipcodewilmington.froilansfarm.GenericUtils.NoiseMaker;
+import com.zipcodewilmington.froilansfarm.Produce.Produce;
 
 public class Person<PersonType> implements NoiseMaker, Eater {
     public Person (String name, int age, boolean hasBeenFed){
@@ -39,7 +40,7 @@ public class Person<PersonType> implements NoiseMaker, Eater {
     }
 
 
-    public void eat() {
+    public void eat(Produce produce) {
 
     }
 

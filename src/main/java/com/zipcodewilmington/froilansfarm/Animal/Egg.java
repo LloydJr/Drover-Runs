@@ -6,6 +6,6 @@ import com.zipcodewilmington.froilansfarm.Produce.Produce;
 public abstract class Egg extends Chicken implements Produce {
 
     public Boolean fertilize() {
-        return null;
+        return fertilize();
     }
 }
