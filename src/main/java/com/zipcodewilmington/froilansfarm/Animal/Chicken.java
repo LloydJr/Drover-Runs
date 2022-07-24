@@ -9,13 +9,10 @@ import com.zipcodewilmington.froilansfarm.Produce.Produce;
 public class Chicken extends Animal {
 
 
-    public Boolean eat() {
-
-        return null;
-    }
+    public void eat(Produce produce) {}
 
     public Boolean hasBeenFed() {
-        return null;
+        return true;
     }
 
     public String makeNoise() {

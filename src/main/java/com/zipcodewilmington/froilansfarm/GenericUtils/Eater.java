@@ -1,6 +1,8 @@
 package com.zipcodewilmington.froilansfarm.GenericUtils;
 
+import com.zipcodewilmington.froilansfarm.Produce.Produce;
+
 public interface Eater {
-     Boolean eat();
+     void eat(Produce produce);
      Boolean hasBeenFed();
 }

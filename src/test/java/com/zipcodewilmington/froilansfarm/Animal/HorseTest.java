@@ -1,14 +1,17 @@
 package com.zipcodewilmington.froilansfarm.Animal;
 
+import com.zipcodewilmington.froilansfarm.GenericUtils.Edible;
 import com.zipcodewilmington.froilansfarm.GenericUtils.Rideable;
 import com.zipcodewilmington.froilansfarm.Person.Farmer;
+import com.zipcodewilmington.froilansfarm.Produce.Corn;
+import com.zipcodewilmington.froilansfarm.Produce.Crop;
+import com.zipcodewilmington.froilansfarm.Produce.Produce;
 import org.junit.Assert;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
 
 public class HorseTest {
-
 
     @Test
     public void isAnAnimalTest(){
@@ -44,5 +47,15 @@ public class HorseTest {
         //Assert
         Assert.assertEquals(noise, horse.makeNoise());
 
+    }
+
+    @Test
+    public void eatTest(){
+        //Arrange
+        Horse horse = new Horse();
+        //Act
+        Boolean actual = true;
+        //Assert
+        Assert.assertEquals(horse.hasBeenFed(), actual);
     }
 }

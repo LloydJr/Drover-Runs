@@ -25,4 +25,13 @@ public class ChickenTest {
         Assert.assertEquals(noise, chicken.makeNoise());
 
     }
+    @Test
+    public void eatTest(){
+        //Arrange
+        Chicken chicken = new Chicken();
+        //Act
+        Boolean actual = true;
+        //Assert
+        Assert.assertEquals(chicken.hasBeenFed(), actual);
+    }
 }
