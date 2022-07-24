@@ -5,9 +5,7 @@ import com.zipcodewilmington.froilansfarm.Produce.CropRow;
 
 public class Botanist <PersonType> {
 
- public boolean plant(Crop crop, CropRow cropRow) {
-return true;
+    public void plant(Crop crop, CropRow cropRow) {
     }
-
 
 }

@@ -12,6 +12,7 @@ public class Horse extends Animal implements Rideable {
 
     public void eat(Produce produce) {}
 
+
     public Boolean hasBeenFed() {
         return true;
     }

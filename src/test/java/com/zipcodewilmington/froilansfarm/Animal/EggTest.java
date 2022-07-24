@@ -15,5 +15,6 @@ public class EggTest {
         Boolean expected = Egg.hasBeenFertilized();
         //Assert
         Assert.assertEquals(expected, true);
+
     }
 }

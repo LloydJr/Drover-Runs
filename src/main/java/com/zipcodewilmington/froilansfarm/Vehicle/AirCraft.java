@@ -15,15 +15,6 @@ public class AirCraft extends Vehicle<Pilot> {
         return "chopchopchop";
     }
 
-    public Boolean mounted() {
-
-        return null;
-    }
-
-    public Boolean dismounted() {
-
-        return null;
-    }
 
     public Boolean mounted(Rider object) {
         return null;

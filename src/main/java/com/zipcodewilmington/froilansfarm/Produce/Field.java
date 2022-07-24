@@ -1,23 +1,23 @@
 package com.zipcodewilmington.froilansfarm.Produce;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+
 public class Field<CropRow> {
-    //    Field<CropRow> field = new Field<CropRow>();
+    ArrayList<CropRow> field;
     Integer numOfRows;
 
-    public Field(Integer numOfRows,CropRow cropRow) {
-        this.numOfRows = numOfRows;
-        for (int i = 0; i <= numOfRows; i++) {
-            this.add(cropRow);
+    public Field() {
+        field = new ArrayList<CropRow>(0);
         }
-    }
 
     CropRow add(CropRow cropRow) {
-        this.add(cropRow);
-        return null;
+        field.add(cropRow);
+        return cropRow;
     }
 
     Integer size() {
-        return this.size();
+        return field.size();
     }
 
 }

@@ -2,9 +2,25 @@ package com.zipcodewilmington.froilansfarm.Produce;
 
 import com.zipcodewilmington.froilansfarm.GenericUtils.Edible;
 
-public interface Crop <Edible> {
-Boolean hasBeenHarvested = false;
+public class Crop<E> {
+    private Boolean hasBeenHarvested;
 
-Crop plant(Edible object);
+
+    public Crop(){
+        setHasBeenHarvested(false);
+
+    }
+
+    public void setHasBeenHarvested(Boolean hasBeenHarvested) {
+        this.hasBeenHarvested = hasBeenHarvested;
+    }
+
+    public Boolean getHasBeenHarvested() {
+        return hasBeenHarvested;
+    }
+
+
+
+
 
 }
