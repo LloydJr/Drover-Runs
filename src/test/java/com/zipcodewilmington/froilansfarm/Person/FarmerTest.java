@@ -10,8 +10,10 @@ import org.junit.Test;
 public class FarmerTest {
 
     @Test
-    public void plant(Crop crop, CropRow cropRow) {
+    public void plant() {
         Farmer farmer = new Farmer();
+        CropRow cropRow = new CropRow();
+        Crop crop = new Crop<>();
         Assert.assertTrue(farmer.plant(crop, cropRow));
     }
 

@@ -11,13 +11,13 @@ public class PilotTest {
     public void testMounted() {
         CropDuster cropDuster = new CropDuster();
         Pilot pilot = new Pilot();
-        Assert.assertTrue(cropDuster.mounted(pilot));
+        Assert.assertEquals(cropDuster.mounted(pilot), pilot.mount(cropDuster));
     }
     @Test
     public void testDismounted() {
         CropDuster cropDuster = new CropDuster();
         Pilot pilot = new Pilot();
-        Assert.assertTrue(cropDuster.dismounted(pilot));
+        Assert.assertEquals(cropDuster.dismounted(pilot), pilot.dismount(cropDuster));
     }
     @Test
     public void testTestMount() {

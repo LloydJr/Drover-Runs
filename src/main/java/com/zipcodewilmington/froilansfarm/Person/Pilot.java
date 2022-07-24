@@ -1,10 +1,11 @@
 package com.zipcodewilmington.froilansfarm.Person;
 
 import com.zipcodewilmington.froilansfarm.Animal.Horse;
+import com.zipcodewilmington.froilansfarm.GenericUtils.Rideable;
 import com.zipcodewilmington.froilansfarm.GenericUtils.Rider;
 import com.zipcodewilmington.froilansfarm.Vehicle.AirCraft;
 
-public class Pilot <PilotType, PersonType> extends AirCraft implements Rider {
+public class Pilot <PilotType, PersonType> implements Rider {
 
 
     public Boolean mounted(Rider object) {
@@ -20,6 +21,16 @@ public class Pilot <PilotType, PersonType> extends AirCraft implements Rider {
     }
 
     public Boolean dismount(Horse object) {
+        return null;
+    }
+
+    @Override
+    public Boolean mount(Rideable object) {
+        return null;
+    }
+
+    @Override
+    public Boolean dismount(Rideable object) {
         return null;
     }
 }
