@@ -10,9 +10,10 @@ public class EggTest {
     @Test
     public void fertilizedTest() {
         //Act
-        Egg egg;
+        Egg egg = new Egg() {
+        };
         //When
-        Boolean expected = Egg.hasBeenFertilized();
+        Boolean expected = egg.fertilize();
         //Assert
         Assert.assertEquals(expected, true);
 

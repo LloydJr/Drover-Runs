@@ -23,6 +23,16 @@ public class Farmer <PersonType, Botanist>  implements Rider  {
         return null;
     }
 
+    @Override
+    public Boolean mount(Rideable object) {
+        return null;
+    }
+
+    @Override
+    public Boolean dismount(Rideable object) {
+        return null;
+    }
+
 
     //Got a warning from the IDE about using raw types and awareness of type erasure when I did
     // public class Farmer <Farmer extends Person> {}.

@@ -26,4 +26,14 @@ public class Tractor<TractorT extends Farmer> extends Vehicle implements FarmVeh
     public Boolean dismounted(Rider object) {
         return null;
     }
+
+    @Override
+    public Boolean mounted(Object object) {
+        return null;
+    }
+
+    @Override
+    public Boolean dismounted(Object object) {
+        return null;
+    }
 }
