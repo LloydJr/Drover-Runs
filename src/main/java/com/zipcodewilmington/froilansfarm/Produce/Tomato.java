@@ -2,7 +2,7 @@ package com.zipcodewilmington.froilansfarm.Produce;
 
 import com.zipcodewilmington.froilansfarm.GenericUtils.Edible;
 
-public class Tomato<E>{
+public class Tomato<E> extends Crop {
 
 }
 

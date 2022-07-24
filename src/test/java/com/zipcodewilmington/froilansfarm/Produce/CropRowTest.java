@@ -1,5 +1,7 @@
 package com.zipcodewilmington.froilansfarm.Produce;
 
+import com.zipcodewilmington.froilansfarm.GenericUtils.Edible;
+import com.zipcodewilmington.froilansfarm.Vehicle.Tractor;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -29,7 +31,7 @@ public class CropRowTest {
     public void cropRowAddCropTest() {
         //Given
         CropRow croprow = new CropRow();
-        Crop<Tomato> mater = new Crop<Tomato>();
+        Tomato mater = new Tomato();
         croprow.plantCrop(mater);
         Integer actualSize = croprow.size();
         Assert.assertTrue(1 == actualSize);
