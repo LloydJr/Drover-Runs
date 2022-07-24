@@ -1,17 +1,20 @@
 package com.zipcodewilmington.froilansfarm.Animal;
 
+import com.zipcodewilmington.froilansfarm.GenericUtils.Eater;
 import com.zipcodewilmington.froilansfarm.GenericUtils.NoiseMaker;
 import com.zipcodewilmington.froilansfarm.GenericUtils.Rideable;
 import com.zipcodewilmington.froilansfarm.GenericUtils.Rider;
+import com.zipcodewilmington.froilansfarm.Produce.Corn;
+import com.zipcodewilmington.froilansfarm.Produce.Crop;
+import com.zipcodewilmington.froilansfarm.Produce.Produce;
 
 public class Horse extends Animal implements Rideable {
 
-    public Boolean eat() {
-return true;
-    }
+    public void eat(Produce produce) {}
+
 
     public Boolean hasBeenFed() {
-        return null;
+        return true;
     }
 
     public String makeNoise() {

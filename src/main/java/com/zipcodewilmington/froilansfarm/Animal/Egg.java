@@ -7,8 +7,7 @@ import com.zipcodewilmington.froilansfarm.Produce.Produce;
 public abstract class Egg extends Chicken implements Produce {
     Edible edible;
 
+    public Boolean fertilize() {
+        return fertilize();
 
-    public Boolean isFertilized() {
-        return edible.getHasBeenFertilized();
-    }
 }
