@@ -1,12 +1,11 @@
 package com.zipcodewilmington.froilansfarm.Person;
 
 import com.zipcodewilmington.froilansfarm.Produce.Crop;
+import com.zipcodewilmington.froilansfarm.Produce.CropRow;
 
-public class Botanist <PersonType> implements Crop {
+public class Botanist <PersonType> {
 
-    Crop crop;
-    @Override
-    public Crop plant(Object object) {
-        return crop;
+    public void plant(Crop crop, CropRow cropRow) {
     }
+
 }
