@@ -6,8 +6,8 @@ import com.zipcodewilmington.froilansfarm.GenericUtils.Rider;
 
 public class Horse extends Animal implements Rideable {
 
-    public void eat() {
-
+    public Boolean eat() {
+return true;
     }
 
     public Boolean hasBeenFed() {

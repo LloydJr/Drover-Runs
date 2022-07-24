@@ -1,19 +1,35 @@
 package com.zipcodewilmington.froilansfarm.Produce;
 
-import com.zipcodewilmington.froilansfarm.Animal.Animal;
-import com.zipcodewilmington.froilansfarm.GenericUtils.Edible;
 import org.junit.Assert;
 import org.junit.Test;
 
-//public class FieldTest {
+public class FieldTest {
 
-//    @Test
-//    Crop<Tomato> mater = new Crop<Tomato>() {
-//        public Crop plant(Tomato object) {
-//            return object;
-//        }
-//    };
-//    CropRow<Crop> cropRow = new CropRow<Crop>(1,mater);
-//    Field<CropRow> fieldsy = new Field<CropRow>(1, cropRow);
-//
-//}
+    @Test
+    public void fieldInstanceTest() {
+        //Given
+        Field field = new Field();
+        Assert.assertEquals(field, field);
+    }
+
+    @Test
+    public void fieldSizeTest() {
+        //Given
+        Field field = new Field();
+        int fieldSize = field.size();
+        Assert.assertTrue(fieldSize == 0);
+    }
+
+    @Test
+    public void fieldAddCropRowTest() {
+        //Given
+        Field field = new Field();
+        CropRow<Crop> cropRow = new CropRow<Crop>();
+        field.add(cropRow);
+        Integer actualSize = field.size();
+        Assert.assertTrue(1 == actualSize);
+    }
+
+
+}
+

@@ -9,8 +9,8 @@ import com.zipcodewilmington.froilansfarm.Produce.Produce;
 public class Chicken extends Animal {
 
 
-    public void eat() {
-
+    public Boolean eat() {
+return true;
     }
 
     public Boolean hasBeenFed() {

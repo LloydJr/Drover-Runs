@@ -1,9 +1,9 @@
 package com.zipcodewilmington.froilansfarm.Vehicle;
 
-import com.zipcodewilmington.froilansfarm.Produce.CropRow;
+import com.zipcodewilmington.froilansfarm.Person.Pilot;
 
 public class CropDuster extends AirCraft implements FarmVehicle {
-    public boolean isFertilize(CropRow cropRow) {
+    public boolean isFertilize() {
         if (fly()) {
             boolean hasBeenFertilized = true;
         }
@@ -11,16 +11,17 @@ public class CropDuster extends AirCraft implements FarmVehicle {
     }
 
 
-    public void operate() {
-
-    }
-
-    public Boolean mounted() {
+    public Boolean operate() {
 
         return null;
     }
 
-    public Boolean dismounted() {
+    public Boolean mounted(Pilot object) {
+
+        return null;
+    }
+
+    public Boolean dismounted(Pilot object) {
 
         return null;
     }

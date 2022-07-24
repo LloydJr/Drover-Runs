@@ -10,13 +10,36 @@ public class PersonTest {
         int actualAge = 35;
         boolean hasBeenFed = true;
         Person person = new Person(actualName, actualAge, hasBeenFed);
+        person.setName(actualName);
         String expectedName = person.getName();
         Assert.assertEquals(expectedName, actualName);
 
     }
 
     @Test
+    public void getNameTest(){
+        String actualName = "Froilan";
+        int actualAge = 35;
+        boolean hasBeenFed = true;
+        Person person = new Person(actualName, actualAge, hasBeenFed);
+        String expectedName = person.getName();
+        Assert.assertEquals(expectedName, actualName);
+    }
+
+    @Test
     public void setAgeTest() {
+        String actualName = "Froilan";
+        int actualAge = 35;
+        boolean hasBeenFed = true;
+        Person person = new Person(actualName, actualAge, hasBeenFed);
+        person.setAge(actualAge);
+        int expectedAge = person.getAge();
+        Assert.assertEquals(expectedAge, actualAge);
+
+    }
+
+    @Test
+    public void getAgeTest() {
         String actualName = "Froilan";
         int actualAge = 35;
         boolean hasBeenFed = true;
@@ -34,5 +57,12 @@ public class PersonTest {
         Person person = new Person(actualName, actualAge, hasBeenFed);
         Assert.assertTrue(hasBeenFed);
 
+    }
+
+
+    public void testEat() {
+    }
+
+    public void testMakeNoise() {
     }
 }

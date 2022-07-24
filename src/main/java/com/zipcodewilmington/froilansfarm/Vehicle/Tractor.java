@@ -5,24 +5,15 @@ import com.zipcodewilmington.froilansfarm.Person.Farmer;
 
 public class Tractor<TractorT extends Farmer> extends Vehicle implements FarmVehicle{
 
-    void harvest(){
+    Boolean harvest(){
 
+        return null;
     }
-
-    public void operate() {
-
-    }
-
-
-    public Boolean mounted() {
+    public Boolean operate() {
 
         return null;
     }
 
-    public Boolean dismounted() {
-
-        return null;
-    }
 
     public String makeNoise() {
         return "vroooom";

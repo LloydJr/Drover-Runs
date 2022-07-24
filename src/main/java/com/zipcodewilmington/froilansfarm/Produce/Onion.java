@@ -1,4 +1,4 @@
 package com.zipcodewilmington.froilansfarm.Produce;
 
-public class Corn<E> {
+public class Onion<E> {
 }
